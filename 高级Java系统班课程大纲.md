@@ -21,6 +21,8 @@
 - [向开源项目贡献代码](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E5%90%91%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81)
   - [向基于GitHub的开源项目贡献代码](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E5%90%91%E5%9F%BA%E4%BA%8Egithub%E7%9A%84%E5%BC%80%E6%BA%90%E9%A1%B9%E7%9B%AE%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81)
   - [向OpenJDK贡献代码](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E5%90%91openjdk%E8%B4%A1%E7%8C%AE%E4%BB%A3%E7%A0%81)
+- [问题排查与解决](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5%E4%B8%8E%E8%A7%A3%E5%86%B3)
+  - [调试器高级实战](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E8%B0%83%E8%AF%95%E5%99%A8%E9%AB%98%E7%BA%A7%E5%AE%9E%E6%88%98)  
 - [多线程与并发](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E4%B8%8E%E5%B9%B6%E5%8F%91)
   - [多线程原理](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%8E%9F%E7%90%86)
   - [多线程实战：JUC包、Fork/Join与并发流](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%AE%9E%E6%88%98juc%E5%8C%85forkjoin%E4%B8%8E%E5%B9%B6%E5%8F%91%E6%B5%81)
@@ -44,7 +46,20 @@
 - [数据结构与JDK实现](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8Ejdk%E5%AE%9E%E7%8E%B0)
   - [基本数据结构与JDK实现](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8Ejdk%E5%AE%9E%E7%8E%B0)
   - [高级数据结构与JDK实现](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E9%AB%98%E7%BA%A7%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8Ejdk%E5%AE%9E%E7%8E%B0)
-- [深入了解JVM](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3jvm)  
+- [深入了解JVM](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E6%B7%B1%E5%85%A5%E4%BA%86%E8%A7%A3jvm)
+  - [JVM的基本结构与计算模型（Java 8+）](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#jvm%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%A8%A1%E5%9E%8Bjava-8)
+  - [JVM的字节码与执行系统](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#jvm%E7%9A%84%E5%AD%97%E8%8A%82%E7%A0%81%E4%B8%8E%E6%89%A7%E8%A1%8C%E7%B3%BB%E7%BB%9F)
+  - [JVM的类加载机制](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#jvm%E7%9A%84%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6)
+  - [GC（Java 8+）](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#gcjava-8)
+  - [JVM工具与问题排查](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#jvm%E5%B7%A5%E5%85%B7%E4%B8%8E%E9%97%AE%E9%A2%98%E6%8E%92%E6%9F%A5)
+- [重构、整洁代码与设计模式](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E9%87%8D%E6%9E%84%E6%95%B4%E6%B4%81%E4%BB%A3%E7%A0%81%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+  - [重构](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E9%87%8D%E6%9E%84%E6%95%B4%E6%B4%81%E4%BB%A3%E7%A0%81%E4%B8%8E%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F)
+  - [设计模式基本实战](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%9F%BA%E6%9C%AC%E5%AE%9E%E6%88%98)
+  - [设计模式高级实战](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E9%AB%98%E7%BA%A7%E5%AE%9E%E6%88%98)
+- [源码剖析](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90)
+  - [Spring深入详解与源码剖析](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#spring%E6%B7%B1%E5%85%A5%E8%AF%A6%E8%A7%A3%E4%B8%8E%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90)
+  - [JDK深入详解与源码剖析（Java部分）](https://github.com/hcsp/website/blob/master/%E9%AB%98%E7%BA%A7Java%E7%B3%BB%E7%BB%9F%E7%8F%AD%E8%AF%BE%E7%A8%8B%E5%A4%A7%E7%BA%B2.md#spring%E6%B7%B1%E5%85%A5%E8%AF%A6%E8%A7%A3%E4%B8%8E%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90)
+
 
 ## Git/GitHub与团队协作
 
